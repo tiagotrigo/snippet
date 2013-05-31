@@ -1,0 +1,48 @@
+<snippet>
+	<content>
+<![CDATA[
+\$('').click(function() \{
+
+	var erro = true;
+	var mensagemErro = 'Há campos obrigatórios a ser preenchiado.';
+	var mensagemSucesso = 'Enviado com sucesso.';
+
+	if (\$('#seletor').val() == '') \{
+		erro = false;
+		mensagemErro;		
+	\}
+
+	var email    = \$('').val();
+	var exclude  = /[^@\-\.\w]|^[_@\.\-]|[\._\-]{2}|[@\.]{2}|(@)[^@]*\1/;
+    var check    = /@[\w\-]+\./;
+    var checkend = /\.[a-zA-Z]{2,3}\$/;
+
+	if(((email.search(exclude) != -1) || (email.search(check)) == -1) || (email.search(checkend) == -1)) \{
+		erro = false;
+		mensagemErro;
+	\}
+
+	if (\$('select option:selected').val() == '') \{
+		erro = false;
+		mensagemErro;
+	\}
+	
+	if (\$('input[type="checkbox"]').is(':checked') == false \|| \$('input[type="radio"]').is(':checked') == false) \{
+		erro = false;
+		mensagemErro;
+	\}
+	
+	if (erro == false) \{
+		var flag = alert(mensagemErro);
+		return false;
+	\} else \{
+		var flag = alert(mensagemSucesso);
+	\}
+	
+\});
+
+]]>
+</content>
+	<tabTrigger>validacaoclick</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
