@@ -1,0 +1,58 @@
+<snippet>
+	<content>
+<![CDATA[
+<!-- CSS -->
+ul { list-style: none; display: block; }
+ul li a { text-decoration: none; }
+
+.hover { width: 700px; height: auto; margin: 0 auto; }
+.hover li { margin: 0 10px 0 0; float: left; }
+.hover li a {
+  background: #000;
+  width: 200px;
+  height: 200px;  
+  display: block;
+}
+
+.hover li a:hover,
+.hover li a:focus,
+.hover li a.ativo { 
+  border: 5px solid #f03;
+  width: 190px;
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+}
+.hover li a:hover
+.hover li a:focus 
+.hover li a.ativo {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.hover li a:hover img
+.hover li a:focus img 
+.hover li a.active img {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+} 
+<!-- Deixando o hover ativo com jQuery -->
+\$('.hover li').find('a').click(function(e) {
+	e.preventDefault();
+	\$('.hover li a').removeClass('ativo');
+	\$(this).addClass('ativo');
+\});
+<!-- HTML -->
+<nav>
+    <ul class="hover">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>        
+    </ul>
+</nav>  
+]]>
+	</content>
+	<tabTrigger>hoverbox</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
