@@ -1,0 +1,28 @@
+<snippet>
+	<content>
+<![CDATA[
+<!-- CSS -->
+.lista { list-style: none; width: 715px; height: auto; display: block; }
+.lista li { float: left; padding: 10px 0 10px 0; }
+.lista li a { text-decoration: none; font: 12px 'arial'; font-style: normal; color: #666; }
+.lista li a em { color: #999; }
+.lista li a p { font-size: 18px; }
+.lista li a:hover p { color: #0686BE; }
+.lista li a img { padding: 0 10px 0 0; float: left; }
+<!-- HTML -->
+<nav>
+	<ol class="lista">
+		<li>
+			<a href="http://goo.gl/CFUka" title="" target="_self">
+				<img src="http://goo.gl/CFUka" alt="" />
+				<em>18 de Janeiro de 2013 | 17h35</em>        
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>          
+			</a>			
+		</li>      
+	</ol>
+</nav>
+]]>
+	</content>
+	<tabTrigger>listanoticias</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
