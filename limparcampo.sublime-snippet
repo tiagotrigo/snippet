@@ -1,0 +1,15 @@
+<snippet>
+	<content>
+<![CDATA[
+$('').focus(function() {
+	if($(this).val() == '')
+		$(this).val('')
+}).blur(function() {
+	if($(this).val() == '')
+		$(this).val(''); 
+});
+]]>
+</content>
+	<tabTrigger>limparcampo</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

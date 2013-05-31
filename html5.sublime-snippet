@@ -1,0 +1,31 @@
+<snippet>
+	<content>
+<![CDATA[ 
+<!doctype html>
+	<html prefix="og:http://ogp.me/ns#">
+	<head> 
+		<title>Projeto</title>
+		<!-- META -->
+		<meta charset="utf-8" />
+		<meta name="keywords" content="#" />
+		<meta name="description" content="#" />
+		<!-- META FACEBOOK -->
+		<meta property="og:title" content="#" />		
+		<meta property="og:url" content="#" />
+		<meta property="og:image" content="#" />
+		<!-- CSS -->
+		<link rel="stylesheet" media="all" type="text/css" href="#" />
+		<!-- JS -->
+		<script type="text/javascript" src="#"></script>
+		<script type="text/javascript" src="#"></script>
+	</head>
+
+	<body>
+
+	</body>
+</html>
+]]>
+	</content>
+	<tabTrigger>estrutura</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
