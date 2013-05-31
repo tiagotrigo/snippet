@@ -1,0 +1,44 @@
+<snippet>
+	<content>
+<![CDATA[
+<!-- CSS -->
+.paginacao { height: auto; position: absolute; }
+.paginacao a { 
+  text-decoration: none;
+  font: 14px 'arial';
+  font-style: normal;
+  color: #666;  
+  background: #ccc; 
+  margin: 0 5px 0 0; 
+  padding: 10px; 
+  float: left; 
+  display: block; 
+}
+.paginacao a:hover { background: #f03; color: #fff; }
+.paginacao a.ativo { background: #f03; color: #fff; }
+<!-- JQUERY -->
+\$('.paginacao').css({
+    width: \$('.paginacao').width() + 'px',
+    left: '50%',
+    marginLeft: '-' + (\$('.paginacao').width()/2) + 'px'
+\}); 
+<!-- HTML -->
+<div class="paginacao">
+   <a href="#" class="prev"><</a>
+   <a href="#">1</a>
+   <a href="#">2</a>
+   <a href="#" class="ativo">3</a>
+   <a href="#">4</a>
+   <a href="#">5</a>
+   <a href="#">6</a>
+   <a href="#">7</a>
+   <a href="#">8</a>
+   <a href="#">9</a>
+   <a href="#">10</a>
+   <a href="#" class="next">></a>
+</div>
+]]>
+	</content>
+	<tabTrigger>paginacao</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
