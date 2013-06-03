@@ -1,0 +1,8 @@
+<snippet>
+	<content>
+<![CDATA[
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1368146021.html#_=1370269566548&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=_codigo_aqui_&amp;size=m&amp;text=_texto_aqui_&amp;url=_codigo_aqui_&amp;via=agenciacaju" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 110px; height: 20px;"></iframe>
+]]></content>
+<tabTrigger>twitterplugin</tabTrigger>
+<scope>text.html</scope>
+</snippet>
