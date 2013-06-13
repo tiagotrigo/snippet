@@ -1,0 +1,12 @@
+<snippet>
+	<content>
+<![CDATA[
+\$('#bio h3').click(function() \{
+	\$(this).next().animate({
+		height: 'toggle'
+	\}, 500, 'linear');
+\});
+]]></content>
+<tabTrigger>accordion</tabTrigger>
+<scope>source.js</scope>
+</snippet>
