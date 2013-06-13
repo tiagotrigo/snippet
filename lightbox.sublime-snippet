@@ -1,8 +1,19 @@
 <snippet>
 	<content>
 <![CDATA[
+<!-- CSS -->
+#overlay {
+  background: black url('loading.gif') no-repeat scroll center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;  
+}
+#lightbox { position: absolute; }
+<!-- JS -->
 \$('a.lightbox').click(function() \{
-	\$('body').css('overflow-y','hidden');
+	\$('body').css('overflow-y', 'hidden');
 
 	\$('<div id="overlay"></div>').css('top', \$(document).scrollTop()).animate({ 'opacity': '.5' }, 500).appendTo('body');
 	\$('<div id="lightbox"></div>').hide().appendTo('body');
@@ -28,7 +39,7 @@ function positionLightboxImage() \{
 function removeLightbox() \{
 	\$('#overlay, #lightbox').fadeOut(500, function() \{
 		\$(this).remove();
-		\$('body').css('overflow-y','auto');
+		\$('body').css('overflow-y', 'auto');
 	\});
 \}
 
